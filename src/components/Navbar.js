@@ -17,7 +17,9 @@ function Navbar() {
             <a href="#">Propuestas</a>
           </li>
           <li>
-            <a href="#" style={{color:"red", fontWeight:"bold"}}>Nosotros</a>
+            <a href="#" style={{ color: "red", fontWeight: "bold" }}>
+              Nosotros
+            </a>
           </li>
         </ul>
         <CartWidget />
