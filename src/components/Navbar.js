@@ -4,26 +4,36 @@ import "./css/NavBar.css";
 function Navbar() {
   return (
     <>
-      <navbar className="Navbar">
-        <h1>Adri'sCakeShop</h1>
-        <ul>
+      <div className="Navbar">
+        <h1>hola</h1>
+        <ul className="ul">
           <li>
-            <a href="#">Pasteles</a>
+            <a className="a" href="#">
+              Pasteles
+            </a>
           </li>
           <li>
-            <a href="#">Galletas</a>
+            <a className="a" href="#">
+              Galletas
+            </a>
           </li>
           <li>
-            <a href="#">Propuestas</a>
+            <a className="a" href="#">
+              Propuestas
+            </a>
           </li>
           <li>
-            <a href="#" style={{ color: "red", fontWeight: "bold" }}>
+            <a
+              className="a"
+              href="#"
+              style={{ color: "red", fontWeight: "bold" }}
+            >
               Nosotros
             </a>
           </li>
         </ul>
         <CartWidget />
-      </navbar>
+      </div>
     </>
   );
 }

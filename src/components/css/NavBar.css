@@ -9,12 +9,12 @@
   background-color: rgb(255, 230, 234);
 }
 
-ul {
+.ul {
   list-style-type: none;
   display: flex;
 }
 
-a {
+.a {
   padding: 15px;
 
   font-family: "Times New Roman", Times, serif;
@@ -23,7 +23,7 @@ a {
   color: rgb(255, 57, 90);
 }
 
-h1 {
+.h1 {
   color: red;
   font-family: "Times New Roman", Times, serif;
 }

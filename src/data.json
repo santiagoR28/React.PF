@@ -1,0 +1,182 @@
+[
+  {
+    "id": "1",
+    "name": "Flower Cake",
+    "price": "",
+    "img": "./assets/img-products/tortas/img-productos-tortas1.jpeg",
+    "description": "",
+    "stock": "",
+    "route": ""
+  },
+  {
+    "id": "2",
+    "name": "Black and Gold",
+    "price": "",
+    "img": "",
+    "description": "",
+    "stock": "",
+    "route": ""
+  },
+  {
+    "id": "3",
+    "name": "vanilla cake",
+    "price": "",
+    "img": "",
+    "description": "",
+    "stock": "",
+    "route": ""
+  },
+  {
+    "id": "4",
+    "name": "",
+    "price": "",
+    "img": "",
+    "description": "",
+    "stock": "",
+    "route": ""
+  },
+  {
+    "id": "5",
+    "name": "",
+    "price": "",
+    "img": "",
+    "description": "",
+    "stock": "",
+    "route": ""
+  },
+  {
+    "id": "6",
+    "name": "",
+    "price": "",
+    "img": "",
+    "description": "",
+    "stock": "",
+    "route": ""
+  },
+  {
+    "id": "7",
+    "name": "",
+    "price": "",
+    "img": "",
+    "description": "",
+    "stock": "",
+    "route": ""
+  },
+  {
+    "id": "8",
+    "name": "",
+    "price": "",
+    "img": "",
+    "description": "",
+    "stock": "",
+    "route": ""
+  },
+  {
+    "id": "9",
+    "name": "",
+    "price": "",
+    "img": "",
+    "description": "",
+    "stock": "",
+    "route": ""
+  },
+  {
+    "id": "10",
+    "name": "",
+    "price": "",
+    "img": "",
+    "description": "",
+    "stock": "",
+    "route": ""
+  },
+  {
+    "id": "11",
+    "name": "",
+    "price": "",
+    "img": "",
+    "description": "",
+    "stock": "",
+    "route": ""
+  },
+  {
+    "id": "12",
+    "name": "",
+    "price": "",
+    "img": "",
+    "description": "",
+    "stock": "",
+    "route": ""
+  },
+  {
+    "id": "13",
+    "name": "",
+    "price": "",
+    "img": "",
+    "description": "",
+    "stock": "",
+    "route": ""
+  },
+  {
+    "id": "14",
+    "name": "",
+    "price": "",
+    "img": "",
+    "description": "",
+    "stock": "",
+    "route": ""
+  },
+  {
+    "id": "15",
+    "name": "",
+    "price": "",
+    "img": "",
+    "description": "",
+    "stock": "",
+    "route": ""
+  },
+  {
+    "id": "16",
+    "name": "",
+    "price": "",
+    "img": "",
+    "description": "",
+    "stock": "",
+    "route": ""
+  },
+  {
+    "id": "17",
+    "name": "",
+    "price": "",
+    "img": "",
+    "description": "",
+    "stock": "",
+    "route": ""
+  },
+  {
+    "id": "18",
+    "name": "",
+    "price": "",
+    "img": "",
+    "description": "",
+    "stock": "",
+    "route": ""
+  },
+  {
+    "id": "19",
+    "name": "",
+    "price": "",
+    "img": "",
+    "description": "",
+    "stock": "",
+    "route": ""
+  },
+  {
+    "id": "20",
+    "name": "",
+    "price": "",
+    "img": "",
+    "description": "",
+    "stock": "",
+    "route": ""
+  }
+]

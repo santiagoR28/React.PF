@@ -1,11 +1,11 @@
 import Navbar from "./components/Navbar";
-import ItemListContainer from "./components/ItemListContainer";
+import ItemListContainer from "./components/Item/ItemListContainer";
 
 function App() {
   return (
     <>
       <Navbar />
-      <ItemListContainer greeting="Los mejores postres" />
+      <ItemListContainer />
     </>
   );
 }
