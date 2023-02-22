@@ -1,0 +1,52 @@
+body {
+  background-color: rgb(238, 238, 238);
+}
+
+.Flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+
+  padding: 40px;
+  background-color: white;
+}
+
+.Hijo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-left: 25px;
+}
+
+.img {
+  width: 20%;
+}
+
+.ItemCount {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  width: 200px;
+  height: 50px;
+
+  border: 1px black solid;
+  background-color: rgb(227, 226, 226);
+}
+
+.suma {
+  background-color: blue;
+  color: white;
+
+  height: 100%;
+  width: 50px;
+}
+
+.resta {
+  background-color: red;
+  color: white;
+}

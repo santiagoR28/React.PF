@@ -1,0 +1,28 @@
+.Flex-product {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgb(238, 238, 238);
+
+  padding: 50px;
+}
+
+.hijo {
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 5px;
+
+  width: 350px;
+  height: 350px;
+
+  background-color: white;
+  align-items: center;
+  text-align: center;
+
+  border: 1px black solid;
+  border-radius: 5px;
+}
+
+.img {
+  width: 100px;
+}

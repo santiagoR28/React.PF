@@ -1,5 +1,5 @@
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import "./css/NavBar.css";
+import "../css/NavBar.css";
 
 function CartWidget() {
   return (
