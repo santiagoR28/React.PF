@@ -48,16 +48,31 @@ const ItemCount = ({ onAdd, stock }) => {
         )}
       </div>
       <h4> stock: {stock} </h4>
-      <button
-        onClick={() => {
-          onAdd(pedido);
-        }}
-      >
-        agregar al carrito
-      </button>
+      {
+        (pedido === 0 ? (
+          <h3>seleccione una cantidad</h3>
+        ) : (
+          <button
+            onClick={() => {
+              onAdd(pedido);
+            }}
+          >
+            agregar al carrito
+          </button>
+        ))
+      }
+
       {/* <ToastContainer /> */}
     </>
   );
 };
 
 export default ItemCount;
+
+// new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'ARS' }).format(number)
+
+// const formatMoney = (num) => {
+//   if (num) {
+//       return "$ " + num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
+//   }
+// }

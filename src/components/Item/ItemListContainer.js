@@ -23,7 +23,6 @@ export const ItemListContainer = () => {
 
   return (
     <>
-      {console.log(products, id)}
       {products.length ? <ItemList products={products} /> : <h2>loading...</h2>}
     </>
   );
