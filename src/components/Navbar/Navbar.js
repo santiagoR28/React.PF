@@ -1,4 +1,5 @@
 import CartWidget from "./CartWidget";
+import WishListWidget from "./WishListWidget";
 import Categories from "./Categories";
 import "../css/NavBar.css";
 import { Link } from "react-router-dom";
@@ -14,6 +15,9 @@ function Navbar() {
         <ul className="ul">
           <Categories />
         </ul>
+        <Link to={"/wishlist"}>
+          <WishListWidget />
+        </Link>
         <Link to={"/cart"}>
           <CartWidget />
         </Link>

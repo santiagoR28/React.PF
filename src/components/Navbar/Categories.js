@@ -25,19 +25,6 @@ function Categories() {
     },
   ];
 
-  // const [categories, setCategories] = useState([]);
-
-  // useEffect(() => {
-  //   const getCategories = async () => {
-  //     try {
-  //       const AsAw = await fetch("https://fakestoreapi.com/products/categories");
-  //       const res = await AsAw.json();
-  //       setCategories(res);
-  //     } catch {}
-  //   };
-  //   getCategories();
-  // }, []);
-
   return (
     <>
       {categories.map((cat) => {

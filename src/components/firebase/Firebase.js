@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB6P2RowVYbwP_vrwdXHC5vNOv2VWVcU5g",
-  authDomain: "react-pf-coder.firebaseapp.com",
-  projectId: "react-pf-coder",
-  storageBucket: "react-pf-coder.appspot.com",
-  messagingSenderId: "690549138714",
-  appId: "1:690549138714:web:2cc05e0ad4c0f77475b8a3",
+  apiKey: "AIzaSyAVBpE2lzQIg7R4fI4JD9ODv81v4e1Aws8",
+  authDomain: "testraectsanti.firebaseapp.com",
+  projectId: "testraectsanti",
+  storageBucket: "testraectsanti.appspot.com",
+  messagingSenderId: "856441770560",
+  appId: "1:856441770560:web:7381955aed3471f94bc5a5",
 };
 
 const app = initializeApp(firebaseConfig);
