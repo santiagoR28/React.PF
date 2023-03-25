@@ -8,8 +8,6 @@ export const CartProvider = ({ children }) => {
 
   const addItem = (product, pedido) => {
     if (isInCart(product.id)) {
-      console.log("sumar pedido");
-
       setCart(
         cart.map((e) => {
           if (e.id === product.id)

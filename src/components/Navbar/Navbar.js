@@ -14,6 +14,9 @@ function Navbar() {
         </Link>
         <ul className="ul">
           <Categories />
+          <Link to={"/sellconsult"} className="purchase">
+            Consultar Compra
+          </Link>
         </ul>
         <Link to={"/wishlist"}>
           <WishListWidget />

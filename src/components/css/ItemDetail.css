@@ -1,7 +1,3 @@
-body {
-  background-color: rgb(238, 238, 238);
-}
-
 .Flex {
   display: flex;
   flex-direction: row;
@@ -9,7 +5,7 @@ body {
   text-align: center;
 
   padding: 40px;
-  background-color: white;
+  background-color: #FFF7F5;
 }
 
 .Hijo {
@@ -35,7 +31,8 @@ body {
   height: 50px;
 
   border: 1px black solid;
-  background-color: rgb(227, 226, 226);
+  background-color: #ffe5dd;
+  color: #ed6061;
 }
 
 .suma {
@@ -49,4 +46,24 @@ body {
 .resta {
   background-color: red;
   color: white;
+}
+
+.btn-finCom{
+  height: 30px;
+  width: 150px;
+  border-radius: 20px;
+
+  background-color: #ffe5dd;
+  color: #ed6061;
+
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.heartIcon{
+  margin: 8px;
+}
+
+.fuente {
+  font-family: 'Alkatra', cursive;
 }

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "../css/ItemDetail.css";
-import "react-toastify/dist/ReactToastify.css";
 
 const ItemCount = ({ onAdd, stock }) => {
   const [pedido, setPedido] = useState(0);
@@ -40,6 +39,7 @@ const ItemCount = ({ onAdd, stock }) => {
           onClick={() => {
             onAdd(pedido);
           }}
+          className="btn-finCom"
         >
           agregar al carrito
         </button>

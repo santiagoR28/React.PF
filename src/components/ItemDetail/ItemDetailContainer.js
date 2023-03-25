@@ -11,14 +11,15 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
     const prodCollection = collection(db, "products");
+
     const refDoc = doc(prodCollection, id);
-    getDoc(refDoc).then((data) => {
-      console.log({
-        id: data.id,
-        ...data.data(),
+    getDoc(refDoc)
+      .then((data) => {
+        setProduct({ ...data.data(), id: data.id });
+      })
+      .catch(() => {
+        setError(true);
       });
-      setProduct({ ...data.data(), id: data.id });
-    });
   }, [id]);
 
   return (

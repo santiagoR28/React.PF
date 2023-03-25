@@ -6,22 +6,11 @@ export const WishListProvider = ({ children }) => {
   const [Wishlist, setWishlist] = useState([]);
 
   const addItemtoWL = (product) => {
-    if (isInList(product.id)) {
-      setWishlist(
-        Wishlist.map((e) => {
-          if (e.id === product.id) console.log("ya existe en lista");
-          return e;
-        })
-      );
-    } else {
-      console.log("sumar");
-      setWishlist([...Wishlist, { ...product }]);
-    }
+    setWishlist([...Wishlist, { ...product }]);
   };
 
   const removeItemFromWL = (e) => {
-    console.log(e);
-    setWishlist(Wishlist.filter((prod) => prod.id !== e));
+    setWishlist(Wishlist.filter((prod) => prod.id !== e.id));
   };
 
   const clearList = () => {

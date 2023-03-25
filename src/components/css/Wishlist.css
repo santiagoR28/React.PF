@@ -1,0 +1,49 @@
+/* 
+Algunos estilos de este componente estan siendo usados por:
+- Cart.js
+*/
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  margin-top: 20px;
+  color: #641111;
+}
+
+.botonera {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-item-WL {
+  height: 30px;
+  width: 150px;
+  border-radius: 20px;
+
+  background-color: #ffe8e1;
+  color: #ff5d5d;
+
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+
+  margin-top: 10px;
+}
+
+.btn-clear-prod {
+  height: 40px;
+  width: 180px;
+  border-radius: 30px;
+
+  background-color: #ffc1ad;
+  color: #ff0000;
+
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}

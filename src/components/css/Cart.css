@@ -1,41 +1,31 @@
-.flx {
+.UI {
   display: flex;
   flex-direction: column;
+
   align-items: center;
-  text-align: center;
-
-  padding: 40px;
-  background-color: white;
 }
 
-.hjo {
-  display: flex;
-  justify-content: space-around;
-
-  width: 1200px;
-
-  border: 1px solid black;
-  padding: 25px;
-  margin-top: 25px;
-}
-
-.image {
-  height: 200px;
-
-  margin-right: 50px;
-}
-
-.btn {
-  background-color: rgb(255, 38, 38);
-  border-radius: 8px;
+.btn-item-cart {
   height: 30px;
+  width: 200px;
+  border-radius: 20px;
+
+  background-color: #ffe8e1;
+  color: #ff3535;
+
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.btn-pago{
+  margin-top: 20px;
+  height: 50px;
+  width: 200px;
+  border-radius: 20px;
+
+  background-color: #ffd0c0;
+  color: #ff0000;
 
   font-size: 20px;
-}
-
-.UI{
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
+  font-family: "Times New Roman", Times, serif;
 }

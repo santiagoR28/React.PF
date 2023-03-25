@@ -1,67 +1,39 @@
-import React, { useContext } from "react";
-import { CartContext } from "../context/CartContext";
-import { db } from "../firebase/Firebase";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  collection,
-  addDoc,
-  serverTimestamp,
-  doc,
-  updateDoc,
-} from "firebase/firestore";
+import Sells from "../sell/Sells";
+import { CartContext } from "../context/CartContext";
 import "../css/Cart.css";
+import "../css/Item.css";
+import "../css/Wishlist.css";
 
 const Cart = () => {
+  const [change, setChange] = useState(false);
   const { cart, removeItem, clear, total } = useContext(CartContext);
-
-  const buyer = {
-    name: "Pedro",
-    lastname: "Gomez",
-    email: "pedrogomez@gmail.com",
-  };
-
-  const clickSell = () => {
-    const sellCollection = collection(db, "sells");
-    addDoc(sellCollection, {
-      buyer,
-      items: cart,
-      total: total.total,
-      time: serverTimestamp(),
-    }).then((promise) => {
-      console.log(promise.id);
-    });
-  };
-
-  const stockUpdate = () => {
-    cart.forEach((result) => {
-      const docRef = doc(db, "products", result.id);
-      updateDoc(docRef, { stock: result.stock - result.pedido });
-    });
-  };
 
   return (
     <>
-      {!cart.length ? (
-        <>
+      {change ? (
+        <Sells />
+      ) : !cart.length ? (
+        <div className="empty">
           <h1>No tienes ningun producto agregado</h1>
           <Link to={"/"}>
-            <button>ver productos</button>
+            <button className="btn-clear-prod">ver productos</button>
           </Link>
-        </>
+        </div>
       ) : (
         <>
-          <div className="flx">
-            {console.log(total)}
+          <div className="Flex-product">
             {cart.map((addedProd) => {
               return (
-                <div key={addedProd.id} className="hjo">
-                  <img className="image" src={addedProd.image} />
+                <div key={addedProd.id} className="hijo">
+                  <img className="img" src={addedProd.image} />
                   <div>
-                    <h1>{addedProd.title}</h1>
-                    <h2>cantidad: {addedProd.pedido} </h2>
-                    <h2>precio: ${addedProd.price} </h2>
+                    <h3>{addedProd.title}</h3>
+                    <h3>cantidad: {addedProd.pedido} </h3>
+                    <h3>precio: ${addedProd.price} </h3>
                     <button
-                      className="btn"
+                      className="btn-item-cart"
                       onClick={() => {
                         removeItem(addedProd.id);
                       }}
@@ -75,10 +47,17 @@ const Cart = () => {
           </div>
           <div className="UI">
             <h2>total: ${total.total} </h2>
-            <button className="btn" onClick={clear}>
+            <button className="btn-clear-prod" onClick={clear}>
               vaciar carrito
             </button>
-            <button onClick={stockUpdate}>Continuar con el pago</button>
+            <button
+              className="btn-pago"
+              onClick={() => {
+                setChange(true);
+              }}
+            >
+              Continuar con el pago
+            </button>
           </div>
         </>
       )}
